@@ -1,0 +1,13 @@
+embed_dim: 64
+n_layers: 3
+lr: 0.001
+batch_size: 2048
+epochs: 500
+eval_every: 10
+patience: 50
+reg_weight: 0.0001
+k: 20
+seed: 42
+method: baseline
+n_envs: 3
+penalty_weight: 1.0

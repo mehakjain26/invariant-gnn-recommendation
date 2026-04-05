@@ -1,0 +1,8 @@
+torch>=2.0
+numpy
+scipy
+polars
+pyyaml
+tensorboard
+matplotlib
+tqdm

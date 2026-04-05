@@ -1,0 +1,149 @@
+# ==========================================
+# Comprehensive GitIgnore for ML / Python / LaTeX
+# ==========================================
+
+# ------------------------------------------
+# Data & Datasets (Raw, Processed, Binaries)
+# ------------------------------------------
+data/raw/
+data/processed/
+data/*.zip
+data/*.tar.gz
+data/*.csv
+data/*.tsv
+data/*.json
+data/*.parquet
+data/*.npz
+data/*.npy
+data/*.pkl
+data/*.pickle
+*.dataset
+
+# ------------------------------------------
+# Checkpoints, Model Weights & Binaries
+# ------------------------------------------
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.bin
+*.onnx
+*.safetensors
+*.model
+
+# Preserve essential summary JSONs in results/
+results/**
+!results/
+!results/*/
+!results/*/*/
+!results/*/*/*/
+!results/**/results.json
+!results/**/config.json
+
+# ------------------------------------------
+# Python Runtime, Caches & Environments
+# ------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------
+# TensorBoard, Experiment Logs & Traces
+# ------------------------------------------
+runs/
+tb_logs/
+wandb/
+*.log
+*.tfevents*
+*.event*
+
+# ------------------------------------------
+# Jupyter Notebooks & Testing Caches
+# ------------------------------------------
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------
+# IDEs, Editors & OS Files
+# ------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# ------------------------------------------
+# LaTeX Auxiliary Files (Paper Build Output)
+# ------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.acn
+*.acr
+*.alg
+
+# ------------------------------------------
+# Environment Variables & Secrets
+# ------------------------------------------
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
