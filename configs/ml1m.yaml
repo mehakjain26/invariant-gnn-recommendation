@@ -1,0 +1,5 @@
+base: base.yaml
+dataset: ml-1m
+batch_size: 1024
+epochs: 300
+k_core: 0

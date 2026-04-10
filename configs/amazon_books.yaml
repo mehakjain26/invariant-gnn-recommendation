@@ -1,0 +1,5 @@
+base: base.yaml
+dataset: amazon-books
+batch_size: 4096
+epochs: 500
+k_core: 40

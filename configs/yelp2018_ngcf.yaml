@@ -1,0 +1,6 @@
+base: base.yaml
+dataset: yelp2018
+allowlist: ngcf
+batch_size: 4096
+epochs: 500
+k_core: 10

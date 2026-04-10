@@ -1,0 +1,17 @@
+base: base.yaml
+dataset: amazon-books
+allowlist: ngcf
+split_mode: temporal
+k_core: 0
+embed_dim: 64
+n_layers: 3
+lr: 0.001
+batch_size: 2048
+epochs: 1000
+patience: 100
+eval_every: 20
+early_stop_on: val
+reg_weight: 0.0001
+seed: 2020
+vanilla_bpr: true
+method: baseline

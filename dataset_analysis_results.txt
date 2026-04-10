@@ -1,0 +1,49 @@
+
+--- Fingerprint: ML-1M ---
+Loading cached data from /Users/mehakjain/cs587/data/raw/ml-1m/filtered_10core.parquet
+Remapping IDs...
+  6040 users, 3260 items, 9300 nodes
+Temporal split...
+Building adjacency matrix...
+Normalizing adjacency...
+/Users/mehakjain/cs587/src/data/dataset.py:230: RuntimeWarning: divide by zero encountered in power
+  d_inv_sqrt = np.power(degrees, -0.5)
+Building user-item dicts...
+Dataset: ml-1m | Users: 6040 | Items: 3260 | Train: 698977 | Val: 99854 | Test: 199708
+Size: 6040 users, 3260 items
+Interactions: 998,539 total
+Sparsity: 94.9288%
+Density: 5.071197%
+Popularity Drift (Rho): 0.9495
+Gini (Skewness): 0.5994
+Status: Stable enough for standard IRM training.
+
+--- Fingerprint: AMAZON-BOOKS ---
+Loading pre-split files (prefix=ngcf)...
+  52643 users, 91599 items, 144242 nodes
+Building adjacency matrix...
+Normalizing adjacency...
+Building user-item dicts...
+Dataset: amazon-books | Users: 52643 | Items: 91599 | Train: 2142657 | Val: 238073 | Test: 603378
+Size: 52643 users, 91599 items
+Interactions: 2,984,108 total
+Sparsity: 99.9381%
+Density: 0.061885%
+Popularity Drift (Rho): 0.2464
+Gini (Skewness): 0.4901
+Status: Stable enough for standard IRM training.
+
+--- Fingerprint: YELP2018 ---
+Loading pre-split files (prefix=ngcf)...
+  31668 users, 38048 items, 69716 nodes
+Building adjacency matrix...
+Normalizing adjacency...
+Building user-item dicts...
+Dataset: yelp2018 | Users: 31668 | Items: 38048 | Train: 1113534 | Val: 123725 | Test: 324147
+Size: 31668 users, 38048 items
+Interactions: 1,561,406 total
+Sparsity: 99.8704%
+Density: 0.129588%
+Popularity Drift (Rho): 0.5123
+Gini (Skewness): 0.5329
+Status: Stable enough for standard IRM training.
