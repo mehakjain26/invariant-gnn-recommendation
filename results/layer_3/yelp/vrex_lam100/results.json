@@ -1,0 +1,45 @@
+{
+  "test": {
+    "recall@20": 0.03162500948497111,
+    "ndcg@20": 0.026819091957707986
+  },
+  "subgroups": {
+    "spearman_rho": 0.12294995555767033,
+    "rising": {
+      "recall@20": 9.845834135239818e-05,
+      "ndcg@20": 5.562394351964034e-05,
+      "n_items": 4161
+    },
+    "falling": {
+      "recall@20": 0.027624309392265192,
+      "ndcg@20": 0.007983675159019415,
+      "n_items": 3182
+    },
+    "stable": {
+      "recall@20": 0.04494224577302642,
+      "ndcg@20": 0.03277248873499016,
+      "n_items": 29377
+    }
+  },
+  "config": {
+    "embed_dim": 64,
+    "n_layers": 3,
+    "lr": 0.001,
+    "batch_size": 2048,
+    "epochs": 1000,
+    "eval_every": 20,
+    "patience": 100,
+    "reg_weight": 0.0001,
+    "k": 20,
+    "seed": 2020,
+    "method": "vrex",
+    "n_envs": 3,
+    "penalty_weight": 100.0,
+    "dataset": "yelp2018",
+    "allowlist": "ngcf",
+    "split_mode": "temporal",
+    "k_core": 0,
+    "early_stop_on": "val",
+    "vanilla_bpr": true
+  }
+}

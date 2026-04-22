@@ -1,0 +1,45 @@
+{
+  "test": {
+    "recall@20": 0.026564838096396464,
+    "ndcg@20": 0.022571202787712803
+  },
+  "subgroups": {
+    "spearman_rho": 0.22286834380911122,
+    "rising": {
+      "recall@20": 0.0006205036699794958,
+      "ndcg@20": 0.0002742658082579558,
+      "n_items": 6236
+    },
+    "falling": {
+      "recall@20": 0.01303088803088803,
+      "ndcg@20": 0.004756681940559614,
+      "n_items": 4955
+    },
+    "stable": {
+      "recall@20": 0.041595347676121316,
+      "ndcg@20": 0.029678156485623036,
+      "n_items": 44771
+    }
+  },
+  "config": {
+    "embed_dim": 64,
+    "n_layers": 3,
+    "lr": 0.001,
+    "batch_size": 2048,
+    "epochs": 1000,
+    "eval_every": 20,
+    "patience": 100,
+    "reg_weight": 0.0001,
+    "k": 20,
+    "seed": 2020,
+    "method": "irm",
+    "n_envs": 3,
+    "penalty_weight": 10.0,
+    "dataset": "amazon-books",
+    "allowlist": "ngcf",
+    "split_mode": "temporal",
+    "k_core": 0,
+    "early_stop_on": "val",
+    "vanilla_bpr": true
+  }
+}

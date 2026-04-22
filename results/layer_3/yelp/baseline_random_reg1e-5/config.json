@@ -1,0 +1,21 @@
+{
+  "embed_dim": 64,
+  "n_layers": 3,
+  "lr": 0.001,
+  "batch_size": 2048,
+  "epochs": 1000,
+  "eval_every": 20,
+  "patience": 100,
+  "reg_weight": 1e-05,
+  "k": 20,
+  "seed": 2020,
+  "method": "baseline",
+  "n_envs": 3,
+  "penalty_weight": 1.0,
+  "dataset": "yelp2018",
+  "split_mode": "files",
+  "split_files": "ngcf",
+  "k_core": 0,
+  "early_stop_on": "test",
+  "vanilla_bpr": true
+}
